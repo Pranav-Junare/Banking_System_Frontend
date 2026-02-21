@@ -1,12 +1,23 @@
+import{BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
 
+import Home from "./Home"
+import Login from "./Login"
+import Dashboard from "./Dashboard"
+import History from "./History"
+import SignUp from './SignUp';
 function App() {
 
   return (
     <>
-    <div>
-      <h1>Banking System Frontend</h1>
-      <p>This is the frontend for the banking system. The home page</p>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/history" element={<History/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
