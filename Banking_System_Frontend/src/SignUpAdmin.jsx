@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function SignUp(){
+export default function SignUpAdmin(){
 
     const[name,setName]=useState("");
     const[email,setEmail]=useState("");
@@ -14,11 +14,11 @@ export default function SignUp(){
 
         e.preventDefault();
 
-        fetch("http://localhost:8080/signup",{
+        fetch("http://localhost:8080/signupAdmin",{
             method: 'POST',
             headers:{'Content-Type':'application/json'},
             credentials:'include',
-            body:JSON.stringify({uName:name, uEmail:email, uPassword:password})
+            body:JSON.stringify({aName:name, aEmail:email, aPassword:password})
         })
         .then(respone=>{
             if(respone.ok){
@@ -41,7 +41,7 @@ export default function SignUp(){
     };
     return (
         <div style={{ maxWidth: "400px", margin: "50px auto", padding: "30px", border: "2px solid #28a745", borderRadius: "8px", fontFamily: "sans-serif" }}>
-            <h2 style={{ color: "#28a745", textAlign: "center", marginBottom: "20px" }}>Create an Account</h2>
+            <h2 style={{ color: "#28a745", textAlign: "center", marginBottom: "20px" }}>Create an Admin Account</h2>
             
             <form onSubmit={handleSignup}>
                 <div style={{ marginBottom: "15px" }}>

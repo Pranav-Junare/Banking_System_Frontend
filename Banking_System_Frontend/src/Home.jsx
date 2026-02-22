@@ -54,7 +54,7 @@ export default function Home() {
                 </button>
                 
                 <button 
-                    onClick={() => navigate('/admin')}
+                    onClick={() => navigate('/signupAdmin')}
                     style={{ padding: "12px 24px", fontSize: "1.1rem", backgroundColor: "darkred", color: "white", border: "none", borderRadius: "5px", cursor: "pointer", fontWeight: "bold", boxShadow: "0 2px 4px rgba(0,0,0,0.2)" }}
                 >
                     Admin Portal
