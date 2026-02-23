@@ -93,7 +93,7 @@ export default function SendMoneyAdmin() {
 
             <div style={{ textAlign: "center", marginTop: "15px" }}>
                 <button 
-                    onClick={() => navigate('/admin-dashboard')}
+                    onClick={() => navigate('/adminDashboard')}
                     style={{ background: "none", border: "none", color: "#666", cursor: "pointer", textDecoration: "underline" }}
                 >
                     Return to Admin Dashboard
