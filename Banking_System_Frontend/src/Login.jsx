@@ -83,6 +83,9 @@ export default function Login(){
             <p style={{ marginTop: "20px", fontWeight: "bold", textAlign: "center", minHeight: "20px" }}>
                 {message}
             </p>
+             <div style={{ textAlign: "center", marginTop: "15px", fontSize: "14px" }}>
+                Need an account? <span style={{ color: "darkred", cursor: "pointer", textDecoration: "underline" }} onClick={() => navigate('/signup')}>Register here</span>
+            </div>
         </div>
         </>
     )
