@@ -9,7 +9,7 @@ export default function Home() {
             
             {/* Header Section */}
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
-                <h1 style={{ color: "#0056b3", fontSize: "2.8rem", marginBottom: "10px" }}>Pranav's Banking System</h1>
+                <h1 style={{ color: "#0056b3", fontSize: "2.8rem", marginBottom: "10px" }}>Group 1's Banking System</h1>
                 <p style={{ fontSize: "1.2rem", color: "#666", maxWidth: "600px", margin: "0 auto" }}>
                     A secure, full-stack financial application built to handle real-time transactions with strict concurrency and safety.
                 </p>
